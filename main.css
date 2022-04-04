@@ -123,10 +123,10 @@ background-image: url(images/hero-image.jpg);
 background-size: cover;
 background-position: center;
 border-bottom: solid black 1px;
-
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   .home-container {
   background-image: url(images/hero-small.jpg); }
 }
@@ -198,7 +198,7 @@ iframe{
   padding: 50px;
 }
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     iframe {
     margin:0 auto;
     display: block;
@@ -208,7 +208,17 @@ width: 100%:
 
      }
 }
+@media (min-width: 1000px) {
+  iframe {
+  margin:0 auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+width: 1280px;
+height: 720px;
 
+   }
+}
 
 .merch-title {
   padding-top: 40px;
@@ -231,7 +241,7 @@ h1 {
 .product-list {
 background-image: linear-gradient(black, black, #2a2b2e);
 
-  padding: 3em;
+  padding: 4em;
 
 }
 
@@ -280,14 +290,18 @@ background-image: linear-gradient(black, black, #2a2b2e);
   display: grid;
   grid-gap: 1rem;
   padding-top: calc((100% - 1000px)/6);
-    padding-left:calc((100% - 1000px)/6);}
-}
+    padding-left:calc((100% - 1000px)/6);
+  }
+
+
 @media (min-width: 600px) {
   .product-container{
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 900px) {
-  .product-container { grid-template-columns: repeat(3, 1fr); }
+  .product-container { grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card img {
@@ -339,14 +353,14 @@ padding-left: 30px
 .about-text h1 {
   color: white;
   font-family: 'Monda';
-  font-size: 5vw;
+  font-size: 4vw;
   text-transform: capitalize;
 
 }
  .about-text p{
    color: #fcfc;
    font-family: 'Monda';
- font-size: 1.5em;
+ font-size: 1.1em;
    line-height: 30px;
 
 
@@ -357,6 +371,14 @@ padding-left: 30px
 @media(max-width: 900px){
     .main{
         grid-template-columns: 400px;
+        padding:0;
+        margin: 0;
+}
+@media(max-width: 900px){
+    .about-text{
+        grid-template-columns: 100px;
+        padding: 0;
+
 }
 @media(max-width: 900px){
     .about-text h1{
@@ -367,4 +389,5 @@ padding-left: 30px
   .about-text p {
     font-size: 2.5vw;
     text-align: left;
+
   }
