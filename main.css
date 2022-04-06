@@ -43,6 +43,9 @@ nav {
   font-weight: bold;
   font-size: 14px;
 }
+.nav-links a:hover{
+  color: purple;
+}
 .burger {
   display: none;
   cursor: pointer;
